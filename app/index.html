@@ -18,11 +18,19 @@
 
     <script src="vendor/angular/angular.min.js"></script>
     <script src="app.js"></script>
-    <script src="day.controller.js"></script>
-    <script src="tomorrow.controller.js"></script>
-    <script src="highlight.directive.js"></script>
-    <script src="day-names.filter.js"></script>
-    <script src="days.service.js"></script>
-    <script src="now-value.service.js"></script>
+
+    <script src="common/filters/common-filters.module.js"></script>
+    <script src="common/filters/day-names.filter.js"></script>
+
+    <script src="common/services/common-services.module.js"></script>
+    <script src="common/services/now-value.service.js"></script>
+
+    <script src="common/common.module.js"></script>
+
+    <script src="feature/feature.module.js"></script>
+    <script src="feature/day.controller.js"></script>
+    <script src="feature/tomorrow.controller.js"></script>
+    <script src="feature/highlight.directive.js"></script>
+    <script src="feature/days.service.js"></script>
 </body>
 </html>
