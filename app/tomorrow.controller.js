@@ -7,8 +7,8 @@
 
     function Tomorrow() {
         let $ctrl = this;
-        let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        //let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-        $ctrl.tomorrow = dayNames[(new Date().getDay() + 1) % 7];
+        $ctrl.tomorrow = (new Date().getDay() + 1) % 7;
     }
 })();

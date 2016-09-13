@@ -7,8 +7,8 @@
 
 	function Day() {
 		let $ctrl = this;
-		let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		//let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-		$ctrl.day = dayNames[new Date().getDay()];
+		$ctrl.day = new Date().getDay();
 	}
 })();
