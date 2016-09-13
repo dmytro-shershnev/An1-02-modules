@@ -5,12 +5,14 @@
         .module("app")
         .directive("highlight", highlight);
 
-    function highlight() {
+    function highlight($filter) {
         return {
             link: function(scope, element, attrs) {
                 let value = scope.$ctrl.day;
 
-                if (value === attrs["highlight"]) {
+                let filterFunction = $filter("dayNames");
+
+                if (filterFunction(value) === attrs["highlight"]) {
                     element.css("color", "red");
                 }
             }

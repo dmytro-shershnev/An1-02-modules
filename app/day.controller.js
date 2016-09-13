@@ -1,14 +1,14 @@
 (function() {
-	"use strict";
+    "use strict";
 
-	angular
-		.module("app")
-		.controller("Day", Day);
+    angular
+        .module("app")
+        .controller("Day", Day);
 
-	function Day() {
-		let $ctrl = this;
-		//let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    function Day(days) {
+        let $ctrl = this;
+        //let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-		$ctrl.day = new Date().getDay();
-	}
+        $ctrl.day = days.today;
+    }
 })();
